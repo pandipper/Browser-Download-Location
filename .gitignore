@@ -1,0 +1,18 @@
+# Older revisions kept locally for reference -- not part of the tool.
+# 本地保留作参考的旧版本 —— 不属于本工具。
+_backup_before_review/
+
+# Logs and scratch files from local testing.
+# 本地测试产生的日志与临时文件。
+*.log
+zz_*.ps1
+zz_*.txt
+bd_*.py
+bd_*.txt
+bd_*.ps1
+
+# Windows / macOS junk.
+# Windows / macOS 系统垃圾文件。
+Thumbs.db
+desktop.ini
+.DS_Store

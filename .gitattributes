@@ -1,0 +1,20 @@
+# Pin line endings explicitly. The .cmd files MUST be CRLF (cmd.exe and its
+# goto/label handling), and the .ps1 files are kept LF as tested. Without this,
+# a global core.autocrlf would silently rewrite them on checkout.
+# 显式固定换行符。.cmd 文件必须是 CRLF（cmd.exe 及其 goto/标签处理），.ps1 文件
+# 保持测试时的 LF。若不固定，全局 core.autocrlf 会在检出时悄悄改写它们。
+*.ps1  text eol=lf
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+*.md   text eol=lf
+*.txt  text eol=lf
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+LICENSE        text eol=lf
+
+# Never touch these.
+# 这些文件不要做任何转换。
+*.png  binary
+*.ico  binary
+*.jpg  binary
+*.gif  binary
